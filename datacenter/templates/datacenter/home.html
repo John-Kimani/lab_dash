@@ -1,0 +1,15 @@
+{% extends 'datacenter/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block content %}
+<p>Still works</p>
+
+{% for data in datas %}
+<div class="container">
+    <li>{{data.location}}</li>
+</div>
+
+{% endfor %}
+
+{% endblock %}
